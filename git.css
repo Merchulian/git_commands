@@ -1,0 +1,51 @@
+body{
+    background-color:rgb(180, 138, 219) !important;
+    font-family:Verdana;
+}
+
+h2{
+    text-align:center;
+}
+
+.commands_container{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(210, 191, 228);
+}
+.search{
+border-color: white !important;
+color: white !important;
+
+}
+.search:hover{
+    color:black;
+    background-color: rgb(180, 138, 219) !important ;
+}
+.d-flex{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+form{
+    padding-left: 10px;
+}
+.section_title{
+    text-align: center;
+    font-weight: bold;}
+li{
+    display:inline-block;
+    margin-bottom:3px;
+    margin-top:3px;
+}
+label{
+    font-size: medium;
+}
+a{ 
+    text-decoration:none;
+}
+.command-buttons{
+    width:500px;
+}

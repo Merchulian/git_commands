@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Git & github commands</title>
+    <link rel="stylesheet" href="git.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Git & Github</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="glossary.html">Glossary</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sections
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="install.html">Install and configure Git</a></li>
+                  <li><a class="dropdown-item" href="index.html">Basic Git</a></li>
+                  <li><a class="dropdown-item" href="remote.html">Remote commands</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="security.html">SSH and security</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="search btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+<h2> Basic Git commands</h2>
+
+<div class="commands_container">
+<p class="section_title"> Day to day git commands</p>
+<p>First, please  <a href="install.html">install</a> Git on Windows</p>
+<form>
+            <label for="git_init">init/re-init a repository:</label><br>
+            <input type="text" class="command-buttons" name="git_init" value="git init">
+            <input type="button" id="git_init" class="copy" value="copy">
+
+            <label for="git_status">shows which files are being tracked for commit (green) and which are not (red):</label><br>
+            <input type="text" class="command-buttons" name="git_status" value="git status">
+            <input type="button" id="git_status" class="copy" value="copy">
+
+            <label for="git_add">includes all files to staging area:</label><br>
+            <input type="text" class="command-buttons" name="git_add" value="git add .">
+            <input type="button" id="git_add" class="copy" value="copy">
+
+            <label for="git_reset">removes all files from staging area:</label><br>
+            <input type="text" class="command-buttons" name="git_reset" value="git reset">
+            <input type="button" id="git_reset" class="copy" value="copy">
+            <p>also can be used git reset {file.ext} to remove certain file </p>
+
+            <label for="git_rm_cached">removes certain file from staging area:</label><br>
+            <input type="text" class="command-buttons" name="git_rm_cached" value="git -rm--cached <file>"> 
+            <input type="button" id="git_rm_cached" class="copy" value="copy">
+            <p>an alternative for the same. </p>
+
+            <label for="git_commit">commit changes made in all files in staging area:</label><br>
+            <input type="text" class="command-buttons" name="git_commit" value='git commit -m""'> 
+            <input type="button" id="git_commit" class="copy" value="copy">
+
+            <label for="git_log">lists all commits in chronological order:</label><br>
+            <input type="text" class="command-buttons" name="git_log" value='git log'> 
+            <input type="button" id="git_commit" class="copy" value="copy">
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</div>
+
+</body>
+</html>
