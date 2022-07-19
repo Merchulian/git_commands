@@ -51,17 +51,18 @@
 <p class="section_title"> Day to day git commands</p>
 <form>
             <label for="git_config_name">Define user name:</label><br>
-            <input type="text" class="command-buttons" name="git_config_name" value="git config --global user.name <name>">
-            <input type="button" id="git_config_name" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_config_name" id="git_config_name" value="git config --global user.name <name>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_config_name')">
 
             <label for="git_config_email">Define user email:</label><br>
-            <input type="text" class="command-buttons" name="git_config_email" value="git config --local user.email <email>">
-            <input type="button" id="git_config_name" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_config_email" id="git_config_email" value="git config --local user.email <email>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_config_email')">
 
 
 
 
 </form>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
 

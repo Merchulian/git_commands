@@ -50,16 +50,31 @@
 <p class="section_title"> Git x Github basics</p>
 <form>
   <p>Make first a <a href="https://www.github.com">github account</a></p>
-            <label for="git_init">Add a remote origin:</label><br>
-            <input type="text" class="command-buttons" name="git_init" value="git add remote origin <project url>">
-            <input type="button" id="git_init" class="copy" value="copy">
+            <label for="git_add_remote">Add a remote origin:</label><br>
+            <input type="text" class="command-buttons" name="git_add_remote" id="git_add_remote" value="git add remote origin <project url>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_add_remote')"><br>
 
-            <label for="git_init">View remote :</label><br>
-            <input type="text" class="command-buttons" name="git_init" value="git add remote origin <project url>">
-            <input type="button" id="git_init" class="copy" value="copy">
+            <label for="git_remote_v">View available sinchronization points:</label><br>
+            <input type="text" class="command-buttons" name="git_remote_v" id="git_remote_v" value="git remote -v">
+            <input type="button" class="copy" value="copy" onClick="copy('git_remote_v')"><br>
 
+            <label for="git_push">Upload last commit on certain &lt;branch&gt; to remote &lt;origin&gt;:</label><br>
+            <input type="text" class="command-buttons" name="git_push" id="git_push" value="git push origin <branch>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_push')">
+            <p>Be careful to make a local commit first, and <em>then upload changes to Github</em>.</p>
+
+            <label for="git_pull">Download a &lt;branch&gt; from Github &lt;origin&gt;:</label><br>
+            <input type="text" class="command-buttons" name="git_pull" id="git_pull" value="git pull origin <branch>">
+            <input type="button"  class="copy" value="copy" onClick="copy('git_pull')">
+            <p>download remote branch from origin and merge with the same local branch. Good practice to make a local commit first.</p><br>
+
+            <label for="git_clone">Clone an existing repository from Github:</label><br>
+            <input type="text" class="command-buttons" name="git_clone" id="git_clone" value="git clone <repo url>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_clone')">
+            <p>Clone an existing repository on current directory. All versions and commits, etc</p><br>
 
 </form>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
 

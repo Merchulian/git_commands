@@ -48,39 +48,42 @@
 
 <div class="commands_container">
 <p class="section_title"> Day to day git commands</p>
-<p>First, please  <a href="install.html">install</a> Git on Windows</p>
+<p>First, please  <a href="install.html">install</a> Git on Windows.</p>
+<p>You are supposed to know how to use Git, here just some basic useful commands.</p>
 <form>
             <label for="git_init">init/re-init a repository:</label><br>
-            <input type="text" class="command-buttons" name="git_init" value="git init">
-            <input type="button" id="git_init" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_init" id="git_init" value="git init">
+            <input type="button" class="copy" value="copy" onClick="copy('git_init')">
 
             <label for="git_status">shows which files are being tracked for commit (green) and which are not (red):</label><br>
-            <input type="text" class="command-buttons" name="git_status" value="git status">
-            <input type="button" id="git_status" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_status" id="git_status" value="git status">
+            <input type="button"  class="copy" value="copy" onClick="copy('git_status')">
 
             <label for="git_add">includes all files to staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_add" value="git add .">
-            <input type="button" id="git_add" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_add" id="git_add" value="git add .">
+            <input type="button" class="copy" value="copy" onClick="copy('git_add')">
 
             <label for="git_reset">removes all files from staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_reset" value="git reset">
-            <input type="button" id="git_reset" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_reset" id="git_reset" value="git reset">
+            <input type="button" class="copy" value="copy" onClick="copy('git_reset')">
             <p>also can be used git reset {file.ext} to remove certain file </p>
 
             <label for="git_rm_cached">removes certain file from staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_rm_cached" value="git -rm--cached <file>"> 
-            <input type="button" id="git_rm_cached" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_rm_cached" id="git_rm_cached" value="git -rm--cached <file>"> 
+            <input type="button" class="copy" value="copy" onClick="copy('git_rm_cached')">
             <p>an alternative for the same. </p>
 
             <label for="git_commit">commit changes made in all files in staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_commit" value='git commit -m""'> 
-            <input type="button" id="git_commit" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_commit" id="git_commit" value='git commit -m""'> 
+            <input type="button" class="copy" value="copy" onClick="copy('git_commit')">
+            <p> Do not forget to put a descriptive message about the committed version.</p>
 
             <label for="git_log">lists all commits in chronological order:</label><br>
-            <input type="text" class="command-buttons" name="git_log" value='git log'> 
-            <input type="button" id="git_commit" class="copy" value="copy">
+            <input type="text" class="command-buttons" name="git_log" id="git_log" value='git log'> 
+            <input type="button" class="copy" value="copy" onClick="copy('git_log')">
 
 </form>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
 
