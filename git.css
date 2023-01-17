@@ -28,7 +28,10 @@ color: white !important;
     margin-top:auto;
     margin-bottom:auto;
 }
-
+/**/
+p{
+    margin-left: 10px;
+}
 form{
     padding-left: 10px;
 }

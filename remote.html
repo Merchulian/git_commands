@@ -37,7 +37,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="search btn btn-outline-success" type="submit">Search</button>
+          <button class="search btn btn-outline-success" type="submit" onClick="alert('not working yet')">Search</button>
         </form>
       </div>
     </div>
@@ -51,7 +51,7 @@
 <form>
   <p>Make first a <a href="https://www.github.com">github account</a></p>
             <label for="git_add_remote">Add a remote origin:</label><br>
-            <input type="text" class="command-buttons" name="git_add_remote" id="git_add_remote" value="git add remote origin <project url>">
+            <input type="text" class="command-buttons" name="git_add_remote" id="git_add_remote" value="git remote add origin <project url>">
             <input type="button" class="copy" value="copy" onClick="copy('git_add_remote')"><br>
 
             <label for="git_remote_v">View available sinchronization points:</label><br>
@@ -73,6 +73,10 @@
             <input type="button" class="copy" value="copy" onClick="copy('git_clone')">
             <p>Clone an existing repository on current directory. All versions and commits, etc</p><br>
 
+            <label for="git_allow">Force pull request when there is not a clear version history between local and remote:</label><br>
+            <input type="text" class="command-buttons" name="git_allow" id="git_allow" value="git pull origin <branch> --allow-unrelated-histories">
+            <input type="button" class="copy" value="copy" onClick="copy('git_allow')">
+            <p>Clone an existing repository on current directory. All versions and commits, etc</p><br>
 </form>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

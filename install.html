@@ -37,7 +37,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="search btn btn-outline-success" type="submit">Search</button>
+              <button class="search btn btn-outline-success" type="submit" onClick="alert('not working yet')">Search</button>
             </form>
           </div>
         </div>
@@ -48,23 +48,27 @@
 
 <div class="commands_container"><p> Enter this <a href="https://git-scm.com/downloads" target="blank">website</a> and choose your O.S.</p></div>
 <div class="commands_container">
-<p class="section_title"> Day to day git commands</p>
+<p class="section_title"> First use commands</p>
+<p>To get started with Git first you have to set your user name and e-mail, so others can blame you for all those bad commits sent to production. </p>
 <form>
             <label for="git_config_name">Define user name:</label><br>
             <input type="text" class="command-buttons" name="git_config_name" id="git_config_name" value="git config --global user.name <name>">
-            <input type="button" class="copy" value="copy" onClick="copy('git_config_name')">
+            <input type="button" class="copy" value="copy" onClick="copy('git_config_name')"><br>
 
             <label for="git_config_email">Define user email:</label><br>
             <input type="text" class="command-buttons" name="git_config_email" id="git_config_email" value="git config --local user.email <email>">
-            <input type="button" class="copy" value="copy" onClick="copy('git_config_email')">
+            <input type="button" class="copy" value="copy" onClick="copy('git_config_email')"><br>
 
-
-
-
+            <label for="git_config_list">See configuration info:</label><br>
+            <input type="text" class="command-buttons" name="git_config_list" id="git_config_list" value="git config --list">
+            <input type="button" class="copy" value="copy" onClick="copy('git_config_list')"><br>
 </form>
+
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
+
+<div class="commands_container"><p> Once you are ready, here are some <a href="index.html" target="blank">day to day commands</a>.</p></div>
 
 </body>
 </html>

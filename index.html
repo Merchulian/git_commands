@@ -37,7 +37,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="search btn btn-outline-success" type="submit">Search</button>
+              <button class="search btn btn-outline-success" type="submit" onClick="alert('not working yet')">Search</button>
             </form>
           </div>
         </div>
@@ -48,7 +48,7 @@
 
 <div class="commands_container">
 <p class="section_title"> Day to day git commands</p>
-<p>First, please  <a href="install.html">install</a> Git on Windows.</p>
+<p>First, please  <a href="install.html">install</a> Git on your device.</p>
 <p>You are supposed to know how to use Git, here just some basic useful commands.</p>
 <form>
             <label for="git_init">init/re-init a repository:</label><br>
@@ -57,11 +57,11 @@
 
             <label for="git_status">shows which files are being tracked for commit (green) and which are not (red):</label><br>
             <input type="text" class="command-buttons" name="git_status" id="git_status" value="git status">
-            <input type="button"  class="copy" value="copy" onClick="copy('git_status')">
+            <input type="button"  class="copy" value="copy" onClick="copy('git_status')"><br>
 
             <label for="git_add">includes all files to staging area:</label><br>
             <input type="text" class="command-buttons" name="git_add" id="git_add" value="git add .">
-            <input type="button" class="copy" value="copy" onClick="copy('git_add')">
+            <input type="button" class="copy" value="copy" onClick="copy('git_add')"><br>
 
             <label for="git_reset">removes all files from staging area:</label><br>
             <input type="text" class="command-buttons" name="git_reset" id="git_reset" value="git reset">
@@ -69,12 +69,12 @@
             <p>also can be used git reset {file.ext} to remove certain file </p>
 
             <label for="git_rm_cached">removes certain file from staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_rm_cached" id="git_rm_cached" value="git -rm--cached <file>"> 
+            <input type="text" class="command-buttons" name="git_rm_cached" id="git_rm_cached" value="git -rm --cached <file>"> 
             <input type="button" class="copy" value="copy" onClick="copy('git_rm_cached')">
             <p>an alternative for the same. </p>
 
             <label for="git_commit">commit changes made in all files in staging area:</label><br>
-            <input type="text" class="command-buttons" name="git_commit" id="git_commit" value='git commit -m""'> 
+            <input type="text" class="command-buttons" name="git_commit" id="git_commit" value='git commit -m" "'> 
             <input type="button" class="copy" value="copy" onClick="copy('git_commit')">
             <p> Do not forget to put a descriptive message about the committed version.</p>
 

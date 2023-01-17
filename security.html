@@ -37,7 +37,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="search btn btn-outline-success" type="submit">Search</button>
+          <button class="search btn btn-outline-success" type="submit" onClick="alert('not working yet')">Search</button>
         </form>
       </div>
     </div>
@@ -50,8 +50,39 @@
 <p class="section_title"> SSH and security issues: </p>
 <form>
 
+  <label for="ssh_keygen">Create a ssh key (Windows 10 and Linux):</label><br>
+  <input type="text" class="command-buttons" name="ssh_keygen" id="ssh_keygen" value="ssh-keygen -t rsa -b 4096 -C <yourmail@mail.com>">
+  <input type="button" class="copy" value="copy" onClick="copy('ssh_keygen')">
+  <p>-t rsa: specifies an algorithm to create the key (in this case rsa)</p>
+  <p>-b 4096: specifies (in bytes) mathematicaly complexity of the key (in this case 4096)</p>
+  <p>-C specifies email</p>
+  <p> if everything is OK you should get confirmation, a path to store your key, the possibility to add an extra password and a randomart image</p>
+  <p>AQt this moment 2 files has been created on the path stated, a public key (id_rsa.pub and your private key id_rsa) </p> <br>
+
+  <label for="ssh_check">You should check if the ssh server is running (windows and Linux):</label><br>
+  <input type="text" class="command-buttons" name="ssh_check" id="ssh_check" value="eval $(ssh-agent -s)">
+  <input type="button" class="copy" value="copy" onClick="copy('ssh_check')">
+  <p>If you get pid number everything is OK and your ssh is running</p>
+
+  <label for="ssh_check">You should check if the ssh server is running (windows and Linux):</label><br>
+  <input type="text" class="command-buttons" name="ssh_check" id="ssh_check" value="eval $(ssh-agent -s)">
+  <input type="button" class="copy" value="copy" onClick="copy('ssh_check')">
+  <p>If you get pid number everything is OK and your ssh is running</p>
+  
+  <p>Now you should add your ssh to your environment (for those who used the defaulta path for key storing):</p>
+  <label for="ssh_add">You should check if the ssh server is running (windows and Linux):</label><br>
+  <input type="text" class="command-buttons" name="ssh_add" id="ssh_add" value="ssh-add ~/.ssh/id_rsa">
+  <input type="button" class="copy" value="copy" onClick="copy('ssh_add')">
+  <p>  If you changed path you should ssh-add + <em>your actual path</em></p>
+
+  <p>Now it is time to share your <strong>public key</strong> with Github. please go to <a href="https://github.com/settings/ssh">https://github.com/settings/ssh </a> and create a new public ssh key. You should have one public key connected for every device you have, never share the same key between devices.</p>
+  <p>On this step you should copy the content of your <strong>public ssh key</strong> (<em>id_rsa.pub</em> stored in <span>c/Users/<em>PC name</em>/.ssh<span> by default) on the corresponding box.</p>
+  <p>You should never reveal the content of your private key (id_rsa) to anyone or submitting it to gitHub. If you do so, remove that key from your computer and github and create a new one.</p>
+
+
 
 </form>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
 
