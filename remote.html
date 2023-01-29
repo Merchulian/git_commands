@@ -53,6 +53,17 @@
             <label for="git_add_remote">Add a remote origin:</label><br>
             <input type="text" class="command-buttons" name="git_add_remote" id="git_add_remote" value="git remote add origin <project url>">
             <input type="button" class="copy" value="copy" onClick="copy('git_add_remote')"><br>
+            <p> here <em>origin</em> is a standard way to name the remote point, you can use any other name (e.g. martha). typing "git remote add martha < project url>", will create a remote push/pull named <em>martha</em>. </p>
+
+            <label for="git_remote_remove">Remove a remote origin:</label><br>
+            <input type="text" class="command-buttons" name="git_remote_remove" id="git_remote_remove" value="git remote remove origin">
+            <input type="button" class="copy" value="copy" onClick="copy('git_remote_remove')"><br>
+            <p>If you read the note on the first command, change <em>origin</em> for whatever your remote was named.</p>
+
+            <label for="git_remote_set-url">Edit an existing remote:</label><br>
+            <input type="text" class="command-buttons" name="git_remote_set-url" id="git_remote_set-url" value="git remote set-url origin <new url>">
+            <input type="button" class="copy" value="copy" onClick="copy('git_remote_set-url')"><br>
+            <p>If you read the note on the first command, change <em>origin</em> for whatever your remote was named.</p>
 
             <label for="git_remote_v">View available sinchronization points:</label><br>
             <input type="text" class="command-buttons" name="git_remote_v" id="git_remote_v" value="git remote -v">
@@ -76,7 +87,7 @@
             <label for="git_allow">Force pull request when there is not a clear version history between local and remote:</label><br>
             <input type="text" class="command-buttons" name="git_allow" id="git_allow" value="git pull origin <branch> --allow-unrelated-histories">
             <input type="button" class="copy" value="copy" onClick="copy('git_allow')">
-            <p>Clone an existing repository on current directory. All versions and commits, etc</p><br>
+            <p>This command clone an existing repository on current directory. All versions and commits, etc</p><br>
 </form>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
