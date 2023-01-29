@@ -52,3 +52,18 @@ a{
 .command-buttons{
     width:500px;
 }
+hr {
+    padding-left:0px;
+    height: 5px;
+    background-color: rgb(111, 30, 111);
+    border-color: rgb(111, 30, 111);
+    width:98%;
+    margin-left:auto;
+    margin-right:auto;
+}
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+}

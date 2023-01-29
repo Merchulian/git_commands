@@ -54,11 +54,11 @@
   <input type="text" class="command-buttons" name="ssh_keygen" id="ssh_keygen" value="ssh-keygen -t rsa -b 4096 -C <yourmail@mail.com>">
   <input type="button" class="copy" value="copy" onClick="copy('ssh_keygen')">
   <p>-t rsa: specifies an algorithm to create the key (in this case rsa)</p>
-  <p>-b 4096: specifies (in bytes) mathematicaly complexity of the key (in this case 4096)</p>
+  <p>-b 4096: specifies (in bytes) mathematical complexity of the key (in this case 4096)</p>
   <p>-C specifies email</p>
   <p> if everything is OK you should get confirmation, a path to store your key, the possibility to add an extra password and a randomart image</p>
-  <p>AQt this moment 2 files has been created on the path stated, a public key (id_rsa.pub and your private key id_rsa) </p> <br>
-
+  <p>At this moment 2 files have been created on the path stated, a public key (<em>id_rsa.pub</em> and your private <em>key id_rsa</em>) </p> <br>
+  <hr>
   <label for="ssh_check">You should check if the ssh server is running (windows and Linux):</label><br>
   <input type="text" class="command-buttons" name="ssh_check" id="ssh_check" value="eval $(ssh-agent -s)">
   <input type="button" class="copy" value="copy" onClick="copy('ssh_check')">
@@ -68,18 +68,20 @@
   <input type="text" class="command-buttons" name="ssh_check" id="ssh_check" value="eval $(ssh-agent -s)">
   <input type="button" class="copy" value="copy" onClick="copy('ssh_check')">
   <p>If you get pid number everything is OK and your ssh is running</p>
-  
-  <p>Now you should add your ssh to your environment (for those who used the defaulta path for key storing):</p>
-  <label for="ssh_add">You should check if the ssh server is running (windows and Linux):</label><br>
+
+  <label for="ssh_add">Now you should add your ssh to your environment (for those who used the default path for key storing):</label><br>
   <input type="text" class="command-buttons" name="ssh_add" id="ssh_add" value="ssh-add ~/.ssh/id_rsa">
   <input type="button" class="copy" value="copy" onClick="copy('ssh_add')">
   <p>  If you changed path you should ssh-add + <em>your actual path</em></p>
 
   <p>Now it is time to share your <strong>public key</strong> with Github. please go to <a href="https://github.com/settings/ssh">https://github.com/settings/ssh </a> and create a new public ssh key. You should have one public key connected for every device you have, never share the same key between devices.</p>
-  <p>On this step you should copy the content of your <strong>public ssh key</strong> (<em>id_rsa.pub</em> stored in <span>c/Users/<em>PC name</em>/.ssh<span> by default) on the corresponding box.</p>
-  <p>You should never reveal the content of your private key (id_rsa) to anyone or submitting it to gitHub. If you do so, remove that key from your computer and github and create a new one.</p>
-
-
+  <p>On this step you should copy the content of your <strong>public ssh key</strong> (<em>id_rsa.pub</em> stored in <span>c/Users/<em>PC name</em>/.ssh<span> by default) on the corresponding box (on Github web site).</p>
+  <p>You should never reveal the content of your private key (id_rsa) to anyone or submitting it to gitHub. If you do so, remove that key from your computer and Github and create a new one.</p>
+  
+  <p>Now it is time to actually make and SSH connection between local and remote.</p>
+  <p> got to github website select or create the repository you want to connect with your local project. On the code green button  select the SSH and copy the content on your clipboard: </p>
+  <img src="images/SSHconect.png" alt="how to copy SSH url">
+  <p>Now you should add a remote origin on your local project (if it was not created before) or modify as <a href="remote.html">shown here</a> but be shure you paste the copied ssh url on your clipboard.</p>
 
 </form>
 <script src="script.js"></script>
