@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(180, 138, 219) !important;
+    background-color:rgb(211, 181, 239) !important;
     font-family:Verdana;
 }
 
@@ -9,11 +9,9 @@ h2{
 
 .commands_container{
     width:50%;
-    margin-left:auto;
-    margin-right:auto;
-    border-style:solid;
-    border-width:3px;
-    border-color:rgb(210, 191, 228);
+    margin:5px auto 5px auto;
+    border:3px solid rgb(169, 126, 209);
+    padding-left:10px;
 }
 .search{
 border-color: white !important;
@@ -28,13 +26,7 @@ color: white !important;
     margin-top:auto;
     margin-bottom:auto;
 }
-/**/
-p{
-    margin-left: 10px;
-}
-form{
-    padding-left: 10px;
-}
+
 .section_title{
     text-align: center;
     font-weight: bold;}
@@ -66,4 +58,26 @@ img {
     margin-left:auto;
     margin-right:auto;
 
+}
+
+footer{
+    padding-top:5px;
+    width:50%;
+    margin:10px auto 20px auto;
+    border:3px solid rgb(169, 126, 209);
+    font-weight:lighter;
+    text-align:center;
+
+}
+
+.in-text-link{
+    text-decoration:none;
+    color:rgb(176, 93, 218);
+}
+
+a:link{
+    text-decoration:none;
+}
+.in-text-link:hover{
+    color:rgb(124, 39, 167);
 }

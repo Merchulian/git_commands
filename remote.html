@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Git & github commands</title>
+    <title> Git x github commands</title>
     <link rel="stylesheet" href="git.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -10,7 +10,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Git & Github</a>
+      <a class="navbar-brand" href="#">Git x Github</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,6 +29,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="install.html">Install and configure Git</a></li>
               <li><a class="dropdown-item" href="index.html">Basic Git</a></li>
+              <li><a class="dropdown-item" href="branches.html">Branch management</a></li>   
               <li><a class="dropdown-item" href="remote.html">Remote commands</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="security.html">SSH and security</a></li>
@@ -49,7 +50,7 @@
 <div class="commands_container">
 <p class="section_title"> Git x Github basics</p>
 <form>
-  <p>Make first a <a href="https://www.github.com">github account</a></p>
+  <p>Create first a <a href="https://www.github.com" class="in-text-link">github account</a></p>
             <label for="git_add_remote">Add a remote origin:</label><br>
             <input type="text" class="command-buttons" name="git_add_remote" id="git_add_remote" value="git remote add origin <project url>">
             <input type="button" class="copy" value="copy" onClick="copy('git_add_remote')"><br>
@@ -88,10 +89,14 @@
             <input type="text" class="command-buttons" name="git_allow" id="git_allow" value="git pull origin <branch> --allow-unrelated-histories">
             <input type="button" class="copy" value="copy" onClick="copy('git_allow')">
             <p>This command clone an existing repository on current directory. All versions and commits, etc</p><br>
+
 </form>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
-
+<footer>
+  <p> Questions? suggestions? <a href="mailto:merchulian@proton.me" class="in-text-link">e-mail me </a></p>
+  <p id="year"> <em>2023</em></p>
+</footer>
 </body>
 </html>

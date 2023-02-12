@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Git & github commands</title>
+    <title> Git x github commands</title>
     <link rel="stylesheet" href="git.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -10,7 +10,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Git & Github</a>
+      <a class="navbar-brand" href="#">Git x Github</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,6 +29,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="install.html">Install and configure Git</a></li>
               <li><a class="dropdown-item" href="index.html">Basic Git</a></li>
+              <li><a class="dropdown-item" href="branches.html">Branch management</a></li>   
               <li><a class="dropdown-item" href="remote.html">Remote commands</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="security.html">SSH and security</a></li>
@@ -74,19 +75,22 @@
   <input type="button" class="copy" value="copy" onClick="copy('ssh_add')">
   <p>  If you changed path you should ssh-add + <em>your actual path</em></p>
 
-  <p>Now it is time to share your <strong>public key</strong> with Github. please go to <a href="https://github.com/settings/ssh">https://github.com/settings/ssh </a> and create a new public ssh key. You should have one public key connected for every device you have, never share the same key between devices.</p>
+  <p>Now it is time to share your <strong>public key</strong> with Github. please go to <a href="https://github.com/settings/ssh" class="in-text-link"> https://github.com/settings/ssh </a> and create a new public ssh key. You should have one public key connected for every device you have, never share the same key between devices.</p>
   <p>On this step you should copy the content of your <strong>public ssh key</strong> (<em>id_rsa.pub</em> stored in <span>c/Users/<em>PC name</em>/.ssh<span> by default) on the corresponding box (on Github web site).</p>
   <p>You should never reveal the content of your private key (id_rsa) to anyone or submitting it to gitHub. If you do so, remove that key from your computer and Github and create a new one.</p>
   
   <p>Now it is time to actually make and SSH connection between local and remote.</p>
   <p> got to github website select or create the repository you want to connect with your local project. On the code green button  select the SSH and copy the content on your clipboard: </p>
-  <img src="images/SSHconect.png" alt="how to copy SSH url">
+  <img src="images/SSHconect.png" alt="how to copy SSH url" id="SSHConect">
   <p>Now you should add a remote origin on your local project (if it was not created before) or modify as <a href="remote.html">shown here</a> but be shure you paste the copied ssh url on your clipboard.</p>
 
 </form>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </div>
-
+<footer>
+  <p> Questions? suggestions? <a href="mailto:merchulian@proton.me" class="in-text-link">e-mail me </a></p>
+  <p id="year"> <em>2023</em></p>
+</footer>
 </body>
 </html>
